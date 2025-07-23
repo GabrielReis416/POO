@@ -1,0 +1,34 @@
+2 - Programação orientada a objetos,devido à sua capacidade de modelar o mundo real de forma clara, sua facilidade de manutenção e escalabilidade, com isso, podendo manipular de maneira mais simples as entidades do sistema, além de possibilitar a reultilização do codigo.
+
+3 - Classe: Pessoa
+             - nome: string
+             - lista de livros 
+
+    Classe: Emprestimo
+             - livro: Livro
+             - data de inicio : DATE
+             - data final : DATE
+             - ususario: Usuario[]
+
+    Classe: Usuario 
+             - Idade: INT
+             - historio de Emprestimos: Emprestimo[]
+
+    Classe: Livro
+             - titulo : STRING
+             - autor : Autor
+             - genero : STRING
+
+    Classe: Autor
+             - nacionalidade: STRING
+
+Relações:  
+
+Autor - Pessoa ( 1 para 1 ).
+Usuario - Pessoa ( 1 para 1 ).
+Livro - pessoa ( 1 para 1 ).
+Autor - Livro ( 1 para N ).
+Livro - Emprestimo ( 1 para N )* mas não pode ter mais de um emprestimo do mesmo livro por vez.
+Usuario - Emprestimo ( 1 para N ).
+Usuario - livro - emprestimo (1 para 1) cada emprestimo pode gaver apenas 1 livro e um usuario.
+
